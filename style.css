@@ -1,0 +1,41 @@
+body
+{
+    background-color: yellow;
+}
+
+h1
+{
+ background-color: navy;
+ color: white;
+ text-align: center;
+}
+
+#dodaj
+{
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 16px; 
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+}    
+
+#usun
+{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 16px; 
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: crimson;
+    text-align: center;
+}
