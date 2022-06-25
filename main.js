@@ -66,14 +66,11 @@ let num2 = 5;
 
 function wieksza_liczba(parametr_1, parametr_2)
 {
-    parametr_1 = num1;
-    parametr_2 = num2;
-    let suma = num1 + num2;
-    let wieksza = suma + 10;
+    let wieksza = Math.max(parametr_1, parametr_2)
     return wieksza;
 }
 
-console.log(wieksza_liczba());
+console.log('wieksza liczba = ',wieksza_liczba(num1, num2));
 
 //zadanie 33 
 
@@ -91,13 +88,19 @@ let string_2 = " Jestem świetnym programistą";
 
 function dluzszy_string(string1, string2)
 {
-    let tekst_stringa = string1 + string2 + ' i napisałem funkcję';
-    console.log(tekst_stringa);
-    return tekst_stringa;
+    if (string1.length > string2.length)
+    {
+        console.log(string1);
+    }
+    else
+    {
+        console.log(string2);
+    }
+   
     
 }
 
-dluzszy_string(string_1, string_2);
+(dluzszy_string(string_1, string_2));
 
 //zadanie 35
 
@@ -105,31 +108,32 @@ function liczba_n(n)
 {
     if (n>=100 && n<=200)
     {
-    console.log('Liczba znajduje się w przedziale');
+        console.log('Liczba znajduje się w przedziale');
     }
     else
-    console.log('Liczba nie znajduje się w przedziale');
-    
+    {
+        console.log('Liczba nie znajduje się w przedziale');
+    }
 }
 
-liczba_n(202);
+liczba_n(199);
 
 //zadanie 36
 
 function dwie_liczby(liczba1, liczba2)
 {
     let warunek = false;
-    if  ((liczba1 == 20) || (liczba1 + liczba2 <= 20)  || (liczba2 == 20))
+    if  ((liczba1 === 20) || (liczba1 + liczba2 <= 20)  || (liczba2 === 20))
     
     {
-     warunek = true;
+         warunek = true;
     }
-    console.log(warunek);
-    return warunek;
+        console.log(warunek);
+        return warunek;
     
 }
 
-dwie_liczby(22,2);
+dwie_liczby(20,2);
 
 
 //zadanie 38
@@ -142,29 +146,29 @@ function kalkulator(a,b)
 
     if (sumaa >= 0)
     {
-    console.log("Wynik dodawania wynosi", sumaa);
+        console.log("Wynik dodawania wynosi", sumaa);
     }
     else
     {
-    console.log("Wynik jest nieprawidłowy");
+        console.log("Wynik jest nieprawidłowy");
     }
 
     if (roznica >= 0)
     {
-    console.log("Wynik dodawania wynosi", roznica);
+        console.log("Wynik dodawania wynosi", roznica);
     }
     else
     {
-    console.log("Wynik jest nieprawidłowy");
+        console.log("Wynik jest nieprawidłowy");
     }
 
     if (iloczyn >= 0)
     {
-    console.log("Wynik dodawania wynosi", iloczyn);
+        console.log("Wynik dodawania wynosi", iloczyn);
     }
     else
     {
-    console.log("Wynik jest nieprawidłowy");
+        console.log("Wynik jest nieprawidłowy");
     }
 }
 
