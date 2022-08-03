@@ -1,0 +1,31 @@
+form{
+    background-color: gray;
+    color:white;
+    width: 30%;
+    height: 170px;
+    font-size: 20px;
+}
+
+button{
+    background-color: brown;
+    margin-top: 20px;
+    font-size: large;
+}
+
+#imie, #nazwisko, #telefon{
+    background-color: gray;
+    width: 20%;
+    height: 25px;
+    text-align: left;
+    font-size: 20px;
+    margin: 0;
+}
+
+#dane{
+    font-size: 30px;
+    margin: 0;
+}
+
+button:hover{
+    background-color: green;
+}
